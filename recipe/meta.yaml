@@ -1,4 +1,4 @@
-{% set version = '1.0.16' %}
+{% set version = "1.0.17" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pubmed.mineR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pubmed.mineR/pubmed.mineR_{{ version }}.tar.gz
-  sha256: 30da150e8baa9dc1b88cd83fb985a25c17cfcf680694cff95fd7d343868f9bb5
+  sha256: 5015206e6f7c57372e0fcadf60c77b60ab6d8b3d652bf330e5f8d54753c01878
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -47,7 +47,7 @@ about:
   summary: Text mining of PubMed Abstracts (text and XML) from <http://www.ncbi.nlm.nih.gov/pubmed>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
