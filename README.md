@@ -1,11 +1,11 @@
-About r-pubmed.miner
-====================
+About r-pubmed.miner-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pubmed.miner-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=pubmed.mineR
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pubmed.miner-feedstock/blob/main/LICENSE.txt)
 
 Summary: Text mining of PubMed Abstracts (text and XML) from <http://www.ncbi.nlm.nih.gov/pubmed>.
 
