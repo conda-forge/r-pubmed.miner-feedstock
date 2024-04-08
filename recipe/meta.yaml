@@ -1,4 +1,4 @@
-{% set version = "1.0.19" %}
+{% set version = "1.0.20" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pubmed.mineR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pubmed.mineR/pubmed.mineR_{{ version }}.tar.gz
-  sha256: ec4db3b3322b41d6dd1aebadffd4d2aa4efd6ef9c22b3d07dc85db03a17c047a
+  sha256: 2d2ec8a63042f15b3c12ac785be975a474b2b77b1dc9715a293ab6556c6ef52a
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
